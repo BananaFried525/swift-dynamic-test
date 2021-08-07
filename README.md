@@ -1,9 +1,10 @@
 
 # API
 install docker-compose up --build -d โดยจะ run ที่ port 8080
-แบ่งออกเป็น 2 ส่วนคือ
-function ในข้อ 2 
 
+แบ่งออกเป็น 2 ส่วนคือ
+
+### Function ในข้อ 2 
 GET localhost:8080/function/max
 
 GET localhost:8080/function/min
@@ -12,7 +13,7 @@ GET localhost:8080/function/average
 
 GET localhost:8080/function/split/:page
 
-approve ใบงานข้อ 3
+### Approve ใบงานข้อ 3
 POST localhost:8080/user/login
 
 mockup user
