@@ -51,7 +51,7 @@ exports.approveReport = async (req, res) => {
             });
             
             if (approveAll) {
-                await reportService.reportNotification(report, 'newscontrol6@gmail.com');
+                await reportService.reportNotification(report, 'napat.s@swiftdynamic.com');
             }
 
         } else {
