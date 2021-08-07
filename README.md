@@ -10,7 +10,9 @@ GET localhost:8080/function/split/:page
 
 approve ใบงานข้อ 3
 POST localhost:8080/user/login
+
 mockup user
+
  1. username: user1 , password: user1ABC
  2. username: user2 , password: user2ABC
  3. username: user3 , password: user3ABC
