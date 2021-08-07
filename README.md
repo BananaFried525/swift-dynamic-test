@@ -23,8 +23,8 @@ mockup user
         }
         response: {
           data: {
-		token: ${token}
-	  }
+			token: ${token}
+	  	}
         }
 
 
