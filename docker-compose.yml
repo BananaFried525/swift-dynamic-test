@@ -8,13 +8,13 @@ services:
       - MONGO_INITDB_DATABASE=${DB_NAME}
     env_file: 
       - ./.env
-  # rest-app:
-  #   restart: always
-  #   build: .
-  #   image: swift-dynamic-test
-  #   ports:
-  #     - ${EXPORE_PORT}:${PORT}
-  #   env_file: 
-  #     - ./.env
-  #   links:
-  #     - mongo
+  rest-app:
+    restart: always
+    build: .
+    image: swift-dynamic-test
+    ports:
+      - ${EXPORE_PORT}:${PORT}
+    env_file: 
+      - ./.env
+    links:
+      - mongo
