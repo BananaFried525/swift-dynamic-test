@@ -42,7 +42,7 @@ exports.reportNotification = (report, receivers) => {
         to: receivers,
         subject: 'Approved report',
         html: `
-            <b>${report.name} approved</b>
+            <b>Report: ${report.name} approved</b>
         `
     }
 

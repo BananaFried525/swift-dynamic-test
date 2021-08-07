@@ -6,6 +6,6 @@ const router = Router();
 router.get('/max',functionConstoller.findMax);
 router.get('/min',functionConstoller.findMin);
 router.get('/average',functionConstoller.findAverage);
-router.get('/row/:row',functionConstoller.row);
+router.get('/split/:page',functionConstoller.split);
 
 module.exports = router;

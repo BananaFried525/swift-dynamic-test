@@ -41,18 +41,13 @@ exports.findAverage = async (req, res) => {
     }
 }
 
-exports.row = async (req, res) => {
+exports.split = async (req, res) => {
     try {
-        let { row } = req.params;
+        let { page } = req.params;
         const resposenData = await httpService.get('http://3.1.189.234:8091/data/ttntest');
         const bodyJson = JSON.parse(resposenData.body);
-        const ret = functionService.row(bodyJson, row);
-        const retData = {
-            data: ret,
-            amount: ret.length,
-            startAt: row || 0
-        }
-        res.status(200).json(retData);
+        const ret = functionService.split(bodyJson, page);
+        res.status(200).json(ret);
     } catch (error) {
         console.log(error);
         res.status(500).json(error);

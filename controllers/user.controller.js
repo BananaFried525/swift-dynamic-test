@@ -42,8 +42,9 @@ exports.approveReport = async (req, res) => {
                     })
                 }
             }
-            await reportService.updateApprove(report);
             const approveAll = report.owner.every(e => e.isApprove == true);
+            report.isApprove = approveAll;
+            await reportService.updateApprove(report);
             res.status(200).json({
                 resultMessage: "success",
                 resultData: {}

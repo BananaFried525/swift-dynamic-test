@@ -5,7 +5,8 @@ const reportSchema = new Schema({
     owner: [{
         refId: { type: Number, required: true },
         isApprove: Boolean
-    }]
+    }],
+    isApprove: { type: Boolean, default: false }
 });
 
 module.exports = model('report', reportSchema);

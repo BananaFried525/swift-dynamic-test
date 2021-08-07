@@ -13,8 +13,8 @@ services:
   #   build: .
   #   image: swift-dynamic-test
   #   ports:
-  #     - 8081:8081
-  #   links:
-  #     - mongo
+  #     - ${EXPORE_PORT}:${PORT}
   #   env_file: 
   #     - ./.env
+  #   links:
+  #     - mongo

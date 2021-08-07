@@ -16,7 +16,7 @@ exports.getConfig = (env) => {
             }
         },
         production: {
-            env: 'dev',
+            env: 'production',
             port: process.env.PORT || 8080,
             db: {
                 host: process.env.DB_HOST || 'localhost',
@@ -31,7 +31,7 @@ exports.getConfig = (env) => {
             }
         }
     }
-    if (env) env = ""
+    if (!env) env = ""
     switch (env.trim()) {
         case 'dev':
             return config.dev;
